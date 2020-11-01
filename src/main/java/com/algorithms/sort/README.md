@@ -24,6 +24,8 @@ Just like cards where you compare with every element and insert into the correct
 
 Start from left+1 to the right. Make the number in question as the key and compare with all the elements to the left.
 
+Swap as you go through such that the left side has the ordered list. Place the numbers in the proper order.
+
 This will start creating a sorted list starting from left. Smaller numbers will be left and you build the list as you go towards right.
 
 ![Insertion Sort](./static/insertionsort.gif) 
