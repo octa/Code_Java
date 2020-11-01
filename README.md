@@ -2,11 +2,11 @@
 
 ## Algorithms
 
-### Searching
+* ### Searching
 
-### Sorting
+* ### Sorting
 
-* BubbleSort - ✅
-* Selection Sort - ✅
+    * BubbleSort - ✅
+    * Selection Sort - ✅
 
 ## Data Structures
