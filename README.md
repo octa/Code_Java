@@ -6,7 +6,7 @@
 
 ### Sorting
 
-* BubbleSort
+* BubbleSort - ✅
 * Selection Sort
 
 ## Data Structures
