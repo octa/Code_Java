@@ -31,3 +31,17 @@ This will start creating a sorted list starting from left. Smaller numbers will 
 ![Insertion Sort](./static/insertionsort.gif) 
 
 ***
+
+### Merge Sort
+
+Divide and conquer algorithm.
+
+Recursively call a method to split the array into individual units.
+
+Start merging them and sorting as you go along.
+
+Eventually, the whole array should be sorted.
+
+![Merge Sort](./static/mergesort.gif)
+
+###
