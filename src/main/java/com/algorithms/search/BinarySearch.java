@@ -10,7 +10,7 @@ public class BinarySearch {
         int key = 1;
 
         BinarySearch binarySearch = new BinarySearch();
-        int index = binarySearch.binarySearch(array, key, 0, array.length);
+        int index = binarySearch.binarySearchRecursion(array, key, 0, array.length);
 
         System.out.println("Found element at index " + index);
 
@@ -40,6 +40,26 @@ public class BinarySearch {
         }
 
         return index;
+
+    }
+
+    public int binarySearchRecursion(int[] array, int key, int low, int high) {
+
+        int mid = (low+high)/2;
+
+        if(high < low || mid >= array.length) {
+            return Integer.MAX_VALUE;
+        }
+
+        if(array[mid] == key) {
+            return mid;
+        }
+        else if(key < array[mid]) {
+            return binarySearchRecursion(array, key, low, mid-1);
+        }
+        else {
+            return binarySearchRecursion(array, key, mid+1, high);
+        }
 
     }
 
