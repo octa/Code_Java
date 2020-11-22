@@ -10,7 +10,7 @@ public class BinarySearch {
         int key = 1;
 
         BinarySearch binarySearch = new BinarySearch();
-        int index = binarySearch.binarySearchRecursion(array, key, 0, array.length);
+        int index = binarySearch.binarySearch(array, key, 0, array.length);
 
         System.out.println("Found element at index " + index);
 
