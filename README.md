@@ -12,3 +12,5 @@
     * Merge Sort - 
 
 ## Data Structures
+
+* Tree
