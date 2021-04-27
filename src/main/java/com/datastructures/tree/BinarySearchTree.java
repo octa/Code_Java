@@ -71,6 +71,39 @@ public class BinarySearchTree {
         inorder(root.right);
     }
 
+    public Node deleteNode(Node root, int value) {
+
+        if(root == null) {
+            return null;
+        }
+
+        if(root.value == value) {
+            if(root.left == null && root.right == null) {
+                return null;
+            }
+
+            if(root.left == null) {
+                return root.right;
+            }
+
+            if(root.right == null) {
+                return root.left;
+            }
+
+        }
+
+        if(root.value <= value) {
+            root.right = deleteNode(root.right, value);
+        }
+        else {
+            root.left = deleteNode(root.left, value);
+        }
+
+        return root;
+
+
+    }
+
     public static void main(String[] args) {
 
         int[] values = {15, 10, 20, 8, 12, 16, 25};
